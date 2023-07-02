@@ -14,12 +14,12 @@ public abstract class ClienteBanco implements Verifica {
     }
 
     public void setNumeroConta(int numeroConta) throws NumException {
-            if (numeroConta < 0) {
+            if (numeroConta > 0) {
+                this.numeroConta = numeroConta;
+            } else {
                 NumException exception = new NumException();
                 exception.impMsg();
-                throw exception;
             }
-            this.numeroConta = numeroConta;
     }
 
 

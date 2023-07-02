@@ -17,8 +17,10 @@ public class PessoaFisica extends ClienteBanco{
     public void verificaDoc() {
         if(getCpf() >= 10 && getCpf() <= 20){
             System.out.println(getCpf() + " CPF Válido!");
+            System.out.println("===============================");
         } else {
             System.out.println(getCpf() + " CPF Inválido");
+            System.out.println("===============================");
         }
     }
 }
